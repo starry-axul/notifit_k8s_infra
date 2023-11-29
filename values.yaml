@@ -1,0 +1,8 @@
+notifit:
+  name: notifit
+  image:
+    url: ncostamagna/notifit_ts_app
+    version: 0.0.1
+  port:
+    http: 3000
+  replicas: 1

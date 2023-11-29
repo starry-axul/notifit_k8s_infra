@@ -1,0 +1,9 @@
+apiVersion: v2
+name: notifit
+description: Notifit application with Kubernetes Helm
+
+type: application
+
+version: 0.0.1
+
+appVersion: "1.16.0"

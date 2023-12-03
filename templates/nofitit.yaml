@@ -7,7 +7,7 @@ metadata:
     env: dev
     project: axul
 spec:
-  replicas: 1
+  replicas: {{.Values.notifit.replicas}}
   selector:
     matchLabels:
       app: {{.Values.notifit.name}}
@@ -38,4 +38,4 @@ spec:
       protocol: TCP
       port: {{.Values.notifit.port.http}}
       targetPort: {{.Values.notifit.port.http}}
-      nodePort: 30010
+      nodePort: {{.Values.notifit.port.node}}
